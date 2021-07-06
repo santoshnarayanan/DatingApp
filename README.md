@@ -1,5 +1,5 @@
 # DatingApp
-1. <b>Summary</b> - The application is designed with course materials explained on Udemy courses.
+1. <b>Summary</b> - The application is designed with course materials explained on [Udemy course](https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/)
 2. <b>Folder</b>  - folder API - contains logic written in C#
 3. <b>Platform</b> - What was platform used in desiging the application ?
            <ul>
