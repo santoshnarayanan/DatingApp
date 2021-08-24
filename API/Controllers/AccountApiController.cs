@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace API.Controllers
 {
-    public class AccountApiController : BaseApiController
+    public class AccountController : BaseApiController
     {
         private readonly DataContext _context;
 
-        public AccountApiController(DataContext context)
+        public AccountController(DataContext context)
         {
             _context = context;
         }
