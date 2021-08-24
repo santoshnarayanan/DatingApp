@@ -42,7 +42,7 @@ namespace API
 
             app.UseRouting();
 
-            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200")); //Here we need to add as ordering is important
+            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200")); //Here we need to add as ordering is important
 
             app.UseAuthorization();
 
