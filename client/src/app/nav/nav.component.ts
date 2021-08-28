@@ -23,4 +23,8 @@ export class NavComponent implements OnInit {
     })
   }
 
+  logout():void{
+    this.loggedIn = false;  //indicate user has logged out
+  }
+
 }
