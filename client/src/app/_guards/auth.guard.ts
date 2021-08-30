@@ -10,18 +10,14 @@ import { AccountService } from '../_services/account.service';
 })
 export class AuthGuard implements CanActivate {
   constructor(private accountService: AccountService, private toastr:ToastrService){}
-  retValue = new Observable<boolean>();
+  private retValue = false;
   canActivate():Observable<boolean>{
-    // @ts-ignore
     return this.accountService.currentUser$.pipe(
-      // @ts-ignore
       map(user=>{
-      if(user) return true;
-      this.toastr.error('You cannot activate route!')
+      if(user)  this.retValue = true;
+      this.toastr.error('You cannot activate route!');
+      return this.retValue;
     })
     )
   }
-
-
-
 }
